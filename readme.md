@@ -22,10 +22,10 @@ keystone.createList('ListWithPlugin', {
 
 ## Config
 
-| Option      | Type     | Default     | Description                     |
-| ----------- | -------- | ----------- | ------------------------------- |
-| `fieldName` | `String` | `sortOrder` | Name of the sorted field.       |
-| `access`    | `Object` | See: access | Change default access controls. |
+| Option      | Type     | Default     | Description                          |
+| ----------- | -------- | ----------- | ------------------------------------ |
+| `fieldName` | `String` | `sortOrder` | Name of the field to use for sorting |
+| `access`    | `Object` | See: access | Change default access controls       |
 
 ### `access`
 
