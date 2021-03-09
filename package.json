@@ -11,7 +11,8 @@
   },
   "dependencies": {
     "@keystonejs/fields": "^17.1.2",
-    "@keystonejs/list-plugins": "^7.1.1"
+    "@keystonejs/list-plugins": "^7.1.1",
+    "pluralize": "^8.0.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.5",
