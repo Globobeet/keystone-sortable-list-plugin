@@ -1,6 +1,7 @@
 /* eslint-disable no-param-reassign */
 import { Integer } from '@keystonejs/fields';
 import { composeHook } from '@keystonejs/list-plugins/lib/utils';
+import { plural } from 'pluralize';
 
 export default ({ fieldName = 'sortOrder', ...fieldOptions } = {}) => ({
   fields = {},
@@ -30,7 +31,7 @@ export default ({ fieldName = 'sortOrder', ...fieldOptions } = {}) => ({
       const { data } = await context.executeGraphQL({
         query: `
           query {
-            items: all${listKey}s(
+            items: all${plural(listKey)}(
               ${where}
               sortBy: ${fieldName}_DESC
               first: 1
@@ -56,7 +57,7 @@ export default ({ fieldName = 'sortOrder', ...fieldOptions } = {}) => ({
     const { data } = await context.executeGraphQL({
       query: `
         query {
-          items: all${listKey}s(
+          items: all${plural(listKey)}(
             where: {
               ${fieldName}: ${resolvedData[fieldName]}
               ${existingWhere}
