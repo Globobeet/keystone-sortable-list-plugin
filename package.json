@@ -1,6 +1,6 @@
 {
   "name": "@globobeet/keystone-sortable-list-plugin",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "dist/index.js",
   "repository": "https://github.com/Globobeet/keystone-sortable-list-plugin.git",
   "author": "Globobeet <hello@globobeet.org>",
